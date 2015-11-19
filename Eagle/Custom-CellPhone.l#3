@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -238,7 +238,7 @@
 <rectangle x1="1.4" y1="5.25" x2="2.4" y2="10.55" layer="39"/>
 <rectangle x1="1.4" y1="5.25" x2="2.4" y2="10.55" layer="43"/>
 </package>
-<package name="QFN-24_MAXIM_90-0022">
+<package name="QFN-24_ALT2">
 <description>&lt;h3&gt;24-pin QFN with Exposed Thermal pad&lt;/h3&gt;
 Parts that use this package:
 &lt;ul&gt;
@@ -280,8 +280,6 @@ Last modified: 8/20/10&lt;br&gt;
 <smd name="18" x="1.955" y="1.25" dx="0.3" dy="0.8" layer="1" rot="R90"/>
 <smd name="EP" x="0" y="0" dx="2.6" dy="2.6" layer="1"/>
 <circle x="-2.1" y="2.1" radius="0.1" width="0.3048" layer="21"/>
-<text x="-2.54" y="-3.81" size="0.8128" layer="27" font="vector" ratio="15">&gt;VALUE</text>
-<text x="-1.27" y="2.54" size="0.8128" layer="25" font="vector" ratio="15">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -432,50 +430,6 @@ Last modified: 8/20/10&lt;br&gt;
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MAX9860" prefix="U">
-<description>The MAX9860 is a low-power, voiceband, mono audio
-codec designed to provide a complete audio solution
-for wireless voice headsets and other mono voice audio
-devices.</description>
-<gates>
-<gate name="G$1" symbol="MAX9860" x="0" y="0"/>
-</gates>
-<devices>
-<device name="_QFN-24" package="QFN-24_MAXIM_90-0022">
-<connects>
-<connect gate="G$1" pin="!IRQ" pad="19"/>
-<connect gate="G$1" pin="AGND" pad="5 EP"/>
-<connect gate="G$1" pin="AVDD" pad="6"/>
-<connect gate="G$1" pin="BCLK" pad="18"/>
-<connect gate="G$1" pin="DGND" pad="12"/>
-<connect gate="G$1" pin="DVDD" pad="13"/>
-<connect gate="G$1" pin="DVDDIO" pad="11"/>
-<connect gate="G$1" pin="LRCLK" pad="17"/>
-<connect gate="G$1" pin="MCLK" pad="14"/>
-<connect gate="G$1" pin="MICBIAS" pad="1"/>
-<connect gate="G$1" pin="MICGND" pad="24"/>
-<connect gate="G$1" pin="MICLN" pad="22"/>
-<connect gate="G$1" pin="MICLP" pad="23"/>
-<connect gate="G$1" pin="MICRN" pad="20"/>
-<connect gate="G$1" pin="MICRP" pad="21"/>
-<connect gate="G$1" pin="OUTN" pad="8"/>
-<connect gate="G$1" pin="OUTP" pad="7"/>
-<connect gate="G$1" pin="PREG" pad="3"/>
-<connect gate="G$1" pin="REF" pad="4"/>
-<connect gate="G$1" pin="REG" pad="2"/>
-<connect gate="G$1" pin="SCL" pad="10"/>
-<connect gate="G$1" pin="SDA" pad="9"/>
-<connect gate="G$1" pin="SDIN" pad="16"/>
-<connect gate="G$1" pin="SDOUT" pad="15"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PN_DK" value="MAX9860ETG+TCT-ND" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>
